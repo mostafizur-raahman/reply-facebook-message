@@ -33,7 +33,7 @@ app.post("/webhook", async (req, res) => {
     if (!messaging) return res.sendStatus(200);
 
     const senderId = messaging.sender.id;
-    const messageText = messaging.message?.text || "Hello 👋";
+    const messageText = messaging.message?.text || "Hello mostafiz here...";
 
     console.log("User ID:", senderId);
     console.log("Message:", messageText);
